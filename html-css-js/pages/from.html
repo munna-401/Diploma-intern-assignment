@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>registration from</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/lib/pweb.message.box.js"></script>
+    <link href="../assets/js/lib/confirm/jquery-confirm.min.css" rel="stylesheet">
+    <script src="../assets/js/lib/confirm/jquery-confirm.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+
+            jQuery(".delete-confirm").confirm({
+                title: 'Confirmation!',
+                content: 'Are you sure want to log  in?'
+            })
+
+        });
+    </script>
+     <script>
+
+        jQuery(document).ready(function () {
+
+
+            jQuery(".show-success-flash").click(function () {
+                PWeb.messageBox.showMessage(true, "Your Registration Success")
+            })
+
+          
+
+
+        });
+
+
+    </script>
+    
+
+
+  
+
+
+</head>
+
+<body>
+  
+   
+    <div class="container mt-3 col-5" style="background-color:rgb(182, 97, 118);">
+        <div class="card" style="background-color:#ffffff;">
+            <h2 style="text-align: center;"> Registration Korun </h2>
+            <div class="card-body";>
+                <form class="needs-validation" noValidate>
+                    
+                    <div class="row">
+
+                        <div class=" col-4">
+                            <label class="form-label" required name="name" ><span class="text-denger pe-1 fw-bolder">*</span> Name</label>
+                            <input type="text" class="form-control">
+                            <div class="invalid-feedback">Please enter your name</div>
+                          
+                           
+                        </div>
+        
+        
+                        <div class=" col-4">
+                            <label class="form-label"><span class="text-denger pe-1 fw-bolder">*</span> Mobile</label>
+                            <input type="tel" class="form-control">
+                            <div class="invalid-feedback">Please enter your mobile</div>
+                          
+                        </div>
+                        
+                        <div class="col-4">
+                            <label class="form-label"><span class="text-denger pe-1 fw-bolder">*</span> Password</label>
+                            <input type="password" class="form-control">
+                            <div class="invalid-feedback">Please enter your password</div>
+                        </div>
+
+                    </div>
+                      
+                    <div class="row">
+
+                        <div class="col-4">
+                            <label class="form-label">Email address</label>
+                            <input type="email" class="form-control" aria-describedby="emailHelp">
+                           
+                            <div class="invalid-feedback">Please enter your email</div>
+                        </div>
+        
+        
+                        <div class=" col-4">
+                            <label class="form-label"> Emrgency Contact</label>
+                            <input type="text" class="form-control">
+                            <div class="invalid-feedback">Please enter your contact</div>
+                        </div>
+                        
+                        <div class="col-4">
+                            <label class="form-label"> Home District</label>
+                            <select class="form-control" name="District-select" id="District-select">
+                                <option value="">select</option>
+                                <option value="dhaka">Dhaka</option>
+                                <option value="rajshahi">RAjshahi</option>
+                                <option value="bogura">Bogura</option>
+                                <option value="parrot">sylet</option>
+                                <option value="chittagong">Chittagong</option>
+                                <option value="khulna">Khulna</option>
+                            </select>
+                            <div class="invalid-feedback">Please enter your district</div>
+                        </div>
+
+                    </div>
+                    
+                   
+                    <div class="row">
+
+                        <div class="col-6">
+                            <label class="form-label">Study In (Diploma Engineering)</label>
+                            <input type="text" class="form-control">
+                            <div class="invalid-feedback">Please enter your study</div>
+                          
+                          
+                        </div>
+        
+        
+                        <div class="col-6">
+                            <label class="form-label"> Inititute name</label>
+                            <input type="password" class="form-control">
+                            <div class="invalid-feedback">Please enter your institute</div>
+                        </div>
+                        
+                        
+
+                    </div>
+                      
+                    <div class="row">
+
+                        <div class="col-4">
+                            <label class="form-label">Technology</label>
+                            <select class="form-control" name="Technology-select" id="technoly-select">
+                                <option value="">Technology</option>
+                                <option value="computer">Computer</option>
+                                <option value="Electrica">Electrica</option>
+                                <option value="Power">Power</option>
+                                <option value="Electronic">Electronics</option>
+                                <option value="Civil">Civil</option>
+                                <option value="Electromedical">Electromedical</option>
+                            </select>
+                            <div class="invalid-feedback">Please enter your Technology</div>
+                          
+                            
+                        </div>
+        
+        
+                        <div class="col-4">
+                            <label class="form-label"> Semister(8th)</label>
+                            <input type="password" class="form-control">
+                            <div class="invalid-feedback">Please enter your semister</div>
+                        </div>
+                        
+                        <div class="col-4">
+                            <label class="form-label"> Shift</label>
+                            <select class="form-control" name="shift-select" id="shift-select">
+                                <option value="">Shift</option>
+                                <option value="Frist">Frist</option>
+                                <option value="secound">secound</option>
+                              
+                            </select>
+                            <div class="invalid-feedback">Please enter your shift</div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-6">
+                            <label class="form-label">Present Adderess</label>
+                            <textarea class="form-control" name="example" rows="4" cols="50">
+                                
+                            </textarea>
+                            <div class="invalid-feedback">Please enter your Present Adderess</div>
+                        </div>
+        
+        
+                        <div class="col-6">
+                            <label class="form-label"> Permanent Adderess</label>
+                            <textarea class="form-control" name="example" rows="4" cols="50">
+                                
+                            </textarea>
+                            <div class="invalid-feedback">Please enter your parmanent address</div>
+                            
+                        </div>
+                        
+                        
+
+                    </div>
+                    <div class="row">
+
+                       
+        
+                        <div class="col-12">
+                            <label class="form-label"> Commment</label>
+                            <textarea class="form-control" name="example" rows="4" cols="50">
+                                
+                            </textarea>
+                            <div class="invalid-feedback">Please enter your comment</div>
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+                 
+                    
+                   
+                    
+                    
+                        <div class="row">
+
+                        <div class="col-12" style="text-align: center;">
+                            <button style="background-color: blueviolet; text-align: center;" class="btn btn-success show-success-flash">Registration</button>
+                            <button class="btn btn-danger delete-confirm" >log in</button>
+                        </div>
+                        
+                    
+
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+<script src="../assets/js/bootstrap-form-validator.js"></script>
+
+</body>
+</html>
