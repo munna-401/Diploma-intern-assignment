@@ -1,6 +1,6 @@
 #Python Method Calling
 def my_name_is():
-    print("My name is  munna")
+    print("My name is Munna")
 
 
 def i_have_enrolled_course(course_name):
@@ -10,37 +10,42 @@ def i_have_enrolled_course(course_name):
 def i_have_learning(backend, frontend):
     return f"Learning {backend}, {frontend}"
 
-course_and_learn=[
-     
-            { "course":"Python & Web",
-                "learn": "Python, HTML, CSS, Bootstrap"
-            },
+
+course_and_learn = [
          
-            {
-                "course": "Java Spring Boot",
-                "learn": "Java, HTML, CSS, Hibernet"
-            },
-           
-               
-            { 
-                  "course": "C# & ASP.NET Core",
-                "learn": "C#, Entity Framework, Razor"
-            },
-           
-             {
-                   "course": "MERN Development",
-               "learn": "Node, React, HTML, CSS"
-             },
-             {
-                  "course": "PHP & Laravel",
-                "learn": "PHP, Blade, Eloquent"
-             }
-         ]
+   {
+       "course":"Python and web",
+       "backend":"Java",
+       "frontend": "Python, HTML, CSS"
+   },
+   {
+       "course":"Java Spring Boot",
+       "backend":"Java",
+       "frontend": "Hibernet, HTML, CSS"
+   },
+   {
+       "course": "C# & ASP.NET Core",
+       "backend": "C#",
+       "frontend": "Razor, Entity Framework"
+   },
+    { "course":"MERN Development",
+      "backend":"Node",
+      "frontend": "React, HTML, CSS"
+      },
+    { "course":"PHP & Laravel",
+      "backend":"PHP",
+      "frontend":"Blade, Eloquent"}
+]
 
 
-for x in course_and_learn:
-        my_name_is()
-        i_have_enrolled_course("Python & Web")
-        result = i_have_learning("Python", "HTML, CSS, JavaScript")
-        print(result)
-print(x["course"],x["learn"])
+for item in course_and_learn:
+    course_name=item["course"]
+    backend=item["backend"]
+    frontend=item["frontend"]
+
+
+
+    my_name_is()
+    i_have_enrolled_course(course_name)
+    result = i_have_learning(backend, frontend)
+    print(result)
